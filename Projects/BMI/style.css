@@ -1,0 +1,65 @@
+body{
+    background-color: aquamarine;
+}
+.container{
+    max-width: 400px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: aliceblue;
+    border: 2px solid #1e5f8a;
+    border-radius: 5px;
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.2);
+}
+h2{
+    margin-top: 0;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+form{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: large;
+    font-weight: 600px;
+    margin-bottom: 5px;
+    color: black;
+}
+input[type="number"],
+select{
+    width: 95%;
+    padding: 10px;
+    border: none;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+input[type="number"]:focus,
+select:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px skyblue;
+}
+select{
+    width: 100%;
+}
+input[type="submit"]{
+    padding: 10px;
+    margin-top: 10px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 3px;
+    color:#fff;
+    cursor: pointer;
+    transition: background-color 0.s ease;
+}
+input[type="sumbit"]:hover{
+    background-color: yellowgreen;
+}
+#result{
+    font-weight: bold;
+    margin-top: 20px;
+    color: #3498db;
+}

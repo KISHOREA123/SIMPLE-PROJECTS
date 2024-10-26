@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(33,27,122);
+background: linear-gradient(90deg, rgba(33,27,122,1) 0%, rgba(81,81,226,1) 36%, rgba(76,182,231,1) 83%, rgba(74,233,233,1) 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    border: 2px solid #fff;
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+.result {
+    display: none;
+    margin-top: 20px;
+}
+
+#message {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #f76b1c;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+    background: #f5a623;
+    transform: translateY(-3px);
+}
+
+.info {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+#currentPlayer {
+    font-weight: bold;
+}
